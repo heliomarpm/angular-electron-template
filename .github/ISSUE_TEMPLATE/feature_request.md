@@ -1,20 +1,31 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+name: "⭐ Feature / enhancement request"
+description: Propose something new.
+labels: 
+- enhancement
+- needs-triage 
+body:
+- type: textarea
+  attributes: 
+    label: Description of the new feature / enhancement
+    placeholder: |
+      What is the expected behavior of the proposed feature?
+  validations:
+    required: true
+- type: textarea
+  attributes: 
+    label: Scenario when this would be used? 
+    placeholder: |
+      What is the scenario this would be used?  Why is this important?
+  validations:
+    required: true
+# - type: textarea
+#   attributes: 
+#     label: Supporting information
+#     placeholder: |
+#       Having additional evidence, data, tweets, blog posts, research, ... anything is extremely helpful. This information provides context to the scenario that may otherwise be lost.
+#   validations:
+#     required: false
+- type: markdown
+  attributes:
+    value: |
+      Please limit one request per issue.
